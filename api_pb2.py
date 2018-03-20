@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='api.proto',
   package='api',
   syntax='proto3',
-  serialized_pb=_b('\n\tapi.proto\x12\x03\x61pi\"\x06\n\x04Void\"\x1a\n\x0cMinerRequest\x12\n\n\x02ID\x18\x01 \x01(\x04\"\xaf\x01\n\tMinerInfo\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07pending\x18\x03 \x01(\x03\x12\x17\n\x0fhistoricalShare\x18\x04 \x01(\x01\x12\x19\n\x11\x65\x66\x66\x65\x63tiveCapacity\x18\x05 \x01(\x01\x12\x10\n\x08\x64\x65\x61\x64line\x18\x06 \x01(\x04\x12\x1d\n\x15lastActiveBlockHeight\x18\x07 \x01(\x04\x12\r\n\x05nConf\x18\x08 \x01(\x05\"S\n\rPoolStatsInfo\x12\x12\n\nminerCount\x18\x01 \x01(\x05\x12\x1d\n\x15\x65\x66\x66\x65\x63tivePoolCapacity\x18\x02 \x01(\x01\x12\x0f\n\x07netDiff\x18\x03 \x01(\x01\"\x9e\x01\n\tBlockInfo\x12\x0e\n\x06height\x18\x01 \x01(\x04\x12\x12\n\nbaseTarget\x18\x02 \x01(\x04\x12\r\n\x05scoop\x18\x03 \x01(\r\x12\x1b\n\x13generationSignature\x18\x04 \x01(\t\x12\x0f\n\x07minerID\x18\x05 \x01(\x04\x12\r\n\x05miner\x18\x06 \x01(\t\x12\x10\n\x08\x64\x65\x61\x64line\x18\x07 \x01(\x04\x12\x0f\n\x07\x63reated\x18\x08 \x01(\t2\x9c\x01\n\x03\x41pi\x12\x33\n\x0cGetMinerInfo\x12\x11.api.MinerRequest\x1a\x0e.api.MinerInfo\"\x00\x12\x33\n\x10GetPoolStatsInfo\x12\t.api.Void\x1a\x12.api.PoolStatsInfo\"\x00\x12+\n\x0cGetBlockInfo\x12\t.api.Void\x1a\x0e.api.BlockInfo\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\tapi.proto\x12\x03\x61pi\"\x06\n\x04Void\"\x1a\n\x0cMinerRequest\x12\n\n\x02ID\x18\x01 \x01(\x04\"\xc5\x01\n\tMinerInfo\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07pending\x18\x03 \x01(\x03\x12\x17\n\x0fhistoricalShare\x18\x04 \x01(\x01\x12\x19\n\x11\x65\x66\x66\x65\x63tiveCapacity\x18\x05 \x01(\x01\x12\x10\n\x08\x64\x65\x61\x64line\x18\x06 \x01(\x04\x12\x1d\n\x15lastActiveBlockHeight\x18\x07 \x01(\x04\x12\r\n\x05nConf\x18\x08 \x01(\x05\x12\x14\n\x0cpayoutDetail\x18\t \x01(\t\"S\n\rPoolStatsInfo\x12\x12\n\nminerCount\x18\x01 \x01(\x05\x12\x1d\n\x15\x65\x66\x66\x65\x63tivePoolCapacity\x18\x02 \x01(\x01\x12\x0f\n\x07netDiff\x18\x03 \x01(\x01\"\x9e\x01\n\tBlockInfo\x12\x0e\n\x06height\x18\x01 \x01(\x04\x12\x12\n\nbaseTarget\x18\x02 \x01(\x04\x12\r\n\x05scoop\x18\x03 \x01(\r\x12\x1b\n\x13generationSignature\x18\x04 \x01(\t\x12\x0f\n\x07minerID\x18\x05 \x01(\x04\x12\r\n\x05miner\x18\x06 \x01(\t\x12\x10\n\x08\x64\x65\x61\x64line\x18\x07 \x01(\x04\x12\x0f\n\x07\x63reated\x18\x08 \x01(\t2\x9c\x01\n\x03\x41pi\x12\x33\n\x0cGetMinerInfo\x12\x11.api.MinerRequest\x1a\x0e.api.MinerInfo\"\x00\x12\x33\n\x10GetPoolStatsInfo\x12\t.api.Void\x1a\x12.api.PoolStatsInfo\"\x00\x12+\n\x0cGetBlockInfo\x12\t.api.Void\x1a\x0e.api.BlockInfo\"\x00\x62\x06proto3')
 )
 
 
@@ -143,6 +143,13 @@ _MINERINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='payoutDetail', full_name='api.MinerInfo.payoutDetail', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -156,7 +163,7 @@ _MINERINFO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=55,
-  serialized_end=230,
+  serialized_end=252,
 )
 
 
@@ -200,8 +207,8 @@ _POOLSTATSINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=232,
-  serialized_end=315,
+  serialized_start=254,
+  serialized_end=337,
 )
 
 
@@ -280,8 +287,8 @@ _BLOCKINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=318,
-  serialized_end=476,
+  serialized_start=340,
+  serialized_end=498,
 )
 
 DESCRIPTOR.message_types_by_name['Void'] = _VOID
@@ -334,8 +341,8 @@ _API = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=479,
-  serialized_end=635,
+  serialized_start=501,
+  serialized_end=657,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetMinerInfo',
