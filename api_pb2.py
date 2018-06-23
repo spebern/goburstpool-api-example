@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='api.proto',
   package='api',
   syntax='proto3',
-  serialized_pb=_b('\n\tapi.proto\x12\x03\x61pi\"\x06\n\x04Void\"\x1a\n\x0cMinerRequest\x12\n\n\x02ID\x18\x01 \x01(\x04\"\xc5\x01\n\tMinerInfo\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07pending\x18\x03 \x01(\x03\x12\x17\n\x0fhistoricalShare\x18\x04 \x01(\x01\x12\x19\n\x11\x65\x66\x66\x65\x63tiveCapacity\x18\x05 \x01(\x01\x12\x10\n\x08\x64\x65\x61\x64line\x18\x06 \x01(\x04\x12\x1d\n\x15lastActiveBlockHeight\x18\x07 \x01(\x04\x12\r\n\x05nConf\x18\x08 \x01(\x05\x12\x14\n\x0cpayoutDetail\x18\t \x01(\t\"S\n\rPoolStatsInfo\x12\x12\n\nminerCount\x18\x01 \x01(\x05\x12\x1d\n\x15\x65\x66\x66\x65\x63tivePoolCapacity\x18\x02 \x01(\x01\x12\x0f\n\x07netDiff\x18\x03 \x01(\x01\"\x9e\x01\n\tBlockInfo\x12\x0e\n\x06height\x18\x01 \x01(\x04\x12\x12\n\nbaseTarget\x18\x02 \x01(\x04\x12\r\n\x05scoop\x18\x03 \x01(\r\x12\x1b\n\x13generationSignature\x18\x04 \x01(\t\x12\x0f\n\x07minerID\x18\x05 \x01(\x04\x12\r\n\x05miner\x18\x06 \x01(\t\x12\x10\n\x08\x64\x65\x61\x64line\x18\x07 \x01(\x04\x12\x0f\n\x07\x63reated\x18\x08 \x01(\t2\x9c\x01\n\x03\x41pi\x12\x33\n\x0cGetMinerInfo\x12\x11.api.MinerRequest\x1a\x0e.api.MinerInfo\"\x00\x12\x33\n\x10GetPoolStatsInfo\x12\t.api.Void\x1a\x12.api.PoolStatsInfo\"\x00\x12+\n\x0cGetBlockInfo\x12\t.api.Void\x1a\x0e.api.BlockInfo\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\tapi.proto\x12\x03\x61pi\"\x06\n\x04Void\"\x1a\n\x0cMinerRequest\x12\n\n\x02ID\x18\x01 \x01(\x04\"\xc5\x01\n\tMinerInfo\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07pending\x18\x03 \x01(\x03\x12\x17\n\x0fhistoricalShare\x18\x04 \x01(\x01\x12\x19\n\x11\x65\x66\x66\x65\x63tiveCapacity\x18\x05 \x01(\x01\x12\x10\n\x08\x64\x65\x61\x64line\x18\x06 \x01(\x04\x12\x1d\n\x15lastActiveBlockHeight\x18\x07 \x01(\x04\x12\r\n\x05nConf\x18\x08 \x01(\x05\x12\x14\n\x0cpayoutDetail\x18\t \x01(\t\"S\n\rPoolStatsInfo\x12\x12\n\nminerCount\x18\x01 \x01(\x05\x12\x1d\n\x15\x65\x66\x66\x65\x63tivePoolCapacity\x18\x02 \x01(\x01\x12\x0f\n\x07netDiff\x18\x03 \x01(\x01\"\x9e\x01\n\tBlockInfo\x12\x0e\n\x06height\x18\x01 \x01(\x04\x12\x12\n\nbaseTarget\x18\x02 \x01(\x04\x12\r\n\x05scoop\x18\x03 \x01(\r\x12\x1b\n\x13generationSignature\x18\x04 \x01(\t\x12\x0f\n\x07minerID\x18\x05 \x01(\x04\x12\r\n\x05miner\x18\x06 \x01(\t\x12\x10\n\x08\x64\x65\x61\x64line\x18\x07 \x01(\x04\x12\x0f\n\x07\x63reated\x18\x08 \x01(\t\"\xa0\x02\n\x0ePoolConfigInfo\x12\x14\n\x0cpoolFeeShare\x18\x01 \x01(\x01\x12\x15\n\rdeadlineLimit\x18\x02 \x01(\x04\x12\x15\n\rMinimumPayout\x18\x03 \x01(\x03\x12\r\n\x05TxFee\x18\x04 \x01(\x03\x12\x13\n\x0bWinnerShare\x18\x05 \x01(\x01\x12\x0c\n\x04TMin\x18\x06 \x01(\x05\x12\x0c\n\x04NAVG\x18\x07 \x01(\x05\x12\x0c\n\x04NMin\x18\x08 \x01(\x05\x12\x11\n\tSetNowFee\x18\t \x01(\x03\x12\x14\n\x0cSetWeeklyFee\x18\n \x01(\x03\x12\x13\n\x0bSetDailyFee\x18\x0b \x01(\x03\x12\x17\n\x0fSetMinPayoutFee\x18\x0c \x01(\x03\x12\x0f\n\x07Version\x18\r \x01(\t\x12\x14\n\x0cPoolPublicID\x18\x0e \x01(\x04\x32\xd3\x01\n\x03\x41pi\x12\x33\n\x0cGetMinerInfo\x12\x11.api.MinerRequest\x1a\x0e.api.MinerInfo\"\x00\x12\x33\n\x10GetPoolStatsInfo\x12\t.api.Void\x1a\x12.api.PoolStatsInfo\"\x00\x12+\n\x0cGetBlockInfo\x12\t.api.Void\x1a\x0e.api.BlockInfo\"\x00\x12\x35\n\x11GetPoolConfigInfo\x12\t.api.Void\x1a\x13.api.PoolConfigInfo\"\x00\x62\x06proto3')
 )
 
 
@@ -291,11 +291,134 @@ _BLOCKINFO = _descriptor.Descriptor(
   serialized_end=498,
 )
 
+
+_POOLCONFIGINFO = _descriptor.Descriptor(
+  name='PoolConfigInfo',
+  full_name='api.PoolConfigInfo',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='poolFeeShare', full_name='api.PoolConfigInfo.poolFeeShare', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='deadlineLimit', full_name='api.PoolConfigInfo.deadlineLimit', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='MinimumPayout', full_name='api.PoolConfigInfo.MinimumPayout', index=2,
+      number=3, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='TxFee', full_name='api.PoolConfigInfo.TxFee', index=3,
+      number=4, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='WinnerShare', full_name='api.PoolConfigInfo.WinnerShare', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='TMin', full_name='api.PoolConfigInfo.TMin', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='NAVG', full_name='api.PoolConfigInfo.NAVG', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='NMin', full_name='api.PoolConfigInfo.NMin', index=7,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='SetNowFee', full_name='api.PoolConfigInfo.SetNowFee', index=8,
+      number=9, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='SetWeeklyFee', full_name='api.PoolConfigInfo.SetWeeklyFee', index=9,
+      number=10, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='SetDailyFee', full_name='api.PoolConfigInfo.SetDailyFee', index=10,
+      number=11, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='SetMinPayoutFee', full_name='api.PoolConfigInfo.SetMinPayoutFee', index=11,
+      number=12, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Version', full_name='api.PoolConfigInfo.Version', index=12,
+      number=13, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='PoolPublicID', full_name='api.PoolConfigInfo.PoolPublicID', index=13,
+      number=14, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=501,
+  serialized_end=789,
+)
+
 DESCRIPTOR.message_types_by_name['Void'] = _VOID
 DESCRIPTOR.message_types_by_name['MinerRequest'] = _MINERREQUEST
 DESCRIPTOR.message_types_by_name['MinerInfo'] = _MINERINFO
 DESCRIPTOR.message_types_by_name['PoolStatsInfo'] = _POOLSTATSINFO
 DESCRIPTOR.message_types_by_name['BlockInfo'] = _BLOCKINFO
+DESCRIPTOR.message_types_by_name['PoolConfigInfo'] = _POOLCONFIGINFO
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Void = _reflection.GeneratedProtocolMessageType('Void', (_message.Message,), dict(
@@ -333,6 +456,13 @@ BlockInfo = _reflection.GeneratedProtocolMessageType('BlockInfo', (_message.Mess
   ))
 _sym_db.RegisterMessage(BlockInfo)
 
+PoolConfigInfo = _reflection.GeneratedProtocolMessageType('PoolConfigInfo', (_message.Message,), dict(
+  DESCRIPTOR = _POOLCONFIGINFO,
+  __module__ = 'api_pb2'
+  # @@protoc_insertion_point(class_scope:api.PoolConfigInfo)
+  ))
+_sym_db.RegisterMessage(PoolConfigInfo)
+
 
 
 _API = _descriptor.ServiceDescriptor(
@@ -341,8 +471,8 @@ _API = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=501,
-  serialized_end=657,
+  serialized_start=792,
+  serialized_end=1003,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetMinerInfo',
@@ -369,6 +499,15 @@ _API = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_VOID,
     output_type=_BLOCKINFO,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetPoolConfigInfo',
+    full_name='api.Api.GetPoolConfigInfo',
+    index=3,
+    containing_service=None,
+    input_type=_VOID,
+    output_type=_POOLCONFIGINFO,
     options=None,
   ),
 ])

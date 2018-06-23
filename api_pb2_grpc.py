@@ -29,6 +29,11 @@ class ApiStub(object):
         request_serializer=api__pb2.Void.SerializeToString,
         response_deserializer=api__pb2.BlockInfo.FromString,
         )
+    self.GetPoolConfigInfo = channel.unary_unary(
+        '/api.Api/GetPoolConfigInfo',
+        request_serializer=api__pb2.Void.SerializeToString,
+        response_deserializer=api__pb2.PoolConfigInfo.FromString,
+        )
 
 
 class ApiServicer(object):
@@ -56,6 +61,13 @@ class ApiServicer(object):
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
+  def GetPoolConfigInfo(self, request, context):
+    # missing associated documentation comment in .proto file
+    pass
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
 
 def add_ApiServicer_to_server(servicer, server):
   rpc_method_handlers = {
@@ -73,6 +85,11 @@ def add_ApiServicer_to_server(servicer, server):
           servicer.GetBlockInfo,
           request_deserializer=api__pb2.Void.FromString,
           response_serializer=api__pb2.BlockInfo.SerializeToString,
+      ),
+      'GetPoolConfigInfo': grpc.unary_unary_rpc_method_handler(
+          servicer.GetPoolConfigInfo,
+          request_deserializer=api__pb2.Void.FromString,
+          response_serializer=api__pb2.PoolConfigInfo.SerializeToString,
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
