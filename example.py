@@ -31,3 +31,6 @@ print(block_info)
 
 # miner = stub.GetMinerInfo(api_pb2.MinerRequest(ID=10282355196851764065))
 # print(miner)
+
+# pool_cfg_info = stub.GetPoolConfigInfo(api_pb2.Void())
+# print(pool_cfg_info )
